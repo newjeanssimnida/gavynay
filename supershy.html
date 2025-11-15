@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Using a nice, legible font and clean background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #1f2937; /* Dark gray text */
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header-bg {
+            background-image: linear-gradient(to right, #2563eb, #3b82f6); /* Blue gradient */
+            color: white;
+        }
+        .section-header {
+            border-left: 4px solid #3b82f6;
+            padding-left: 0.75rem;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="container mx-auto max-w-lg card">
+        
+        <!-- Header - Discreet and clear -->
+        <header class="header-bg p-6 rounded-t-xl">
+            <h1 class="text-2xl font-extrabold tracking-tight">DAILY MIND & BODY CHECK-IN</h1>
+            <p class="text-sm opacity-90 mt-1">**Private:** Your goals. Your rules. **Start Monday!**</p>
+        </header>
+
+        <main class="p-4 sm:p-6 space-y-8">
+            
+            <!-- Section 1: Weekly Schedule -->
+            <div>
+                <h2 class="text-xl font-bold section-header mb-4 text-blue-700">1. Weekly Flow</h2>
+                <div class="space-y-3 text-sm">
+                    <div class="p-3 bg-green-50 rounded-lg flex justify-between items-center shadow-sm">
+                        <span class="font-extrabold w-1/4 text-green-700">M/W/F</span>
+                        <span class="w-3/4">**Strength Routine** (15-20 min) - Private time only.</span>
+                    </div>
+                    <div class="p-3 bg-yellow-50 rounded-lg flex justify-between items-center shadow-sm">
+                        <span class="font-extrabold w-1/4 text-yellow-700">T/Th</span>
+                        <span class="w-3/4">Active Rest: Stretch, Walk, or **Playing Tag**.</span>
+                    </div>
+                    <div class="p-3 bg-green-50 rounded-lg flex justify-between items-center shadow-sm">
+                        <span class="font-extrabold w-1/4 text-green-700">Sat</span>
+                        <span class="w-3/4">**Cardio:** 4-5km walk/run or long game of Tag.</span>
+                    </div>
+                    <div class="p-3 bg-red-50 rounded-lg flex justify-between items-center shadow-sm">
+                        <span class="font-extrabold w-1/4 text-red-700">Sun</span>
+                        <span class="w-3/4">**Full Rest** (Exercise). **Flexible Meal Day** (Nutrition).</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: The 15-Minute Routine -->
+            <div>
+                <h2 class="text-xl font-bold section-header mb-4 text-blue-700">2. The 15-Minute Routine (M/W/F)</h2>
+                <p class="text-xs italic mb-4 p-2 bg-blue-100 rounded-md">Complete 2 Sets of each exercise. **Rest 30 seconds between Sets.**</p>
+                <div class="space-y-3 text-sm">
+                    <div class="bg-gray-100 p-3 rounded-lg flex justify-between">
+                        <span class="font-bold">1. Bodyweight Squats:</span> 10-12 reps
+                    </div>
+                    <div class="bg-gray-100 p-3 rounded-lg flex justify-between">
+                        <span class="font-bold">2. Incline Push-ups:</span> 8-10 reps (Use a desk, chair, or wall).
+                    </div>
+                    <div class="bg-gray-100 p-3 rounded-lg flex justify-between">
+                        <span class="font-bold">3. Plank Hold:</span> 30-45 seconds
+                    </div>
+                    <div class="bg-gray-100 p-3 rounded-lg flex justify-between">
+                        <span class="font-bold">4. Reverse Lunges:</span> 8 reps per leg (Step backward and bend both knees).
+                    </div>
+                    <div class="bg-gray-100 p-3 rounded-lg flex justify-between">
+                        <span class="font-bold">5. Mountain Climbers:</span> 30 seconds (Fast core move, run knees to chest).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Nutrition Rules -->
+            <div>
+                <h2 class="text-xl font-bold section-header mb-4 text-blue-700">3. Nutrition Rules (Fueling Growth)</h2>
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-700">
+                    <li>**Priority:** Focus on **Protein** and **Water**.</li>
+                    <li>**Rule 1: Packed Lunch:** Always include lean protein (chicken, eggs, tofu) + veggies.</li>
+                    <li>**Rule 2: Sugar Cut:** Say **NO** to all sugary drinks (soda, Thai Tea, juices).</li>
+                    <li>**Mala/Gacoan Hack:** Ask for **"Less Oil"** and **DO NOT drink the soup**. Add extra protein (chicken/egg).</li>
+                    <li>**Sleep:** Get 9-12 hours—this is when your muscles grow!</li>
+                </ul>
+            </div>
+            
+            <!-- Section 2: Stealth Workout Tips -->
+            <div>
+                <h2 class="text-xl font-bold section-header mb-4 text-blue-700">4. Stealth Workout Tips</h2>
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-700">
+                    <li>**The 5-Minute Rule:** If you feel lazy, only commit to the first 5 minutes. You can stop after that.</li>
+                    <li>**Push-up Disguise:** Do your **Incline Push-ups** against a wall when no one is looking.</li>
+                    <li>**Plank/Lunges:** Best done silently on your bedroom floor when you have privacy.</li>
+                    <li>**Squats:** Do 10 deep squats when you "drop" something or are bending to look at the bottom shelf of a cupboard.</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
